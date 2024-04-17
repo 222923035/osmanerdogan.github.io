@@ -1,0 +1,617 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --birinci-renk:#dbd8e3;
+    --ikinci-renk:#5c5470;
+    --ucuncu-renk:#f0ece2;
+    --renk-dort:#dfd3c3;
+    --renk-bes:#f3bc77;
+    --renk-alti:#a55233;
+    --renk-yedi:#402a23;
+    --renk-sekiz:#deae4f;
+    --renk-dokuz:#5e0606;
+    --renk-on:#acc6aa;
+    --renk-onbir:#719192;
+    --yazi-tipi-bir: "Poppins", sans-serif;
+    --yazi-tipi-iki: "Roboto", sans-serif;
+    --yazi-tipi-uc:"Merriweather", serif;
+    --yazi-tipi-dort:"Raleway", sans-serif;
+
+}
+
+*{ 
+    margin: 0;
+    padding: 0;
+    font-family: var(--yazi-tipi-bir);
+    background-color: var(--ucuncu-renk);
+}
+
+body{
+    height: 140vh;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:var(--renk-dort);
+    padding: 20px 20px;
+    border: 1px solid black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index:10 ;
+
+}
+
+.osman{
+    background-color:var(--renk-dort);
+} 
+
+.logo{
+    display: flex;
+    height: 60px;
+    justify-content:space-around;
+    align-items: center;
+    background-color: var(--renk-dort);
+}
+
+header img{
+   
+    width: 35px;
+    height: 35px;
+    background-color:var(--renk-dort);
+    border: 2px solid black;
+    border-radius: 40%;
+    }
+
+.logo:hover{
+    border: 3px solid black;
+    box-shadow: 0 0 2px 3px black;
+    border-radius: 10px;
+    transition: all 0.5s ;
+    cursor: pointer;
+    
+}
+#main{
+    transition: 0.5s ease color;
+}
+#main:hover{
+    color:black;
+}
+#about{
+    transition: 0.5s ease color;
+}
+#about:hover{
+    color:black;
+}
+#futbol{
+    transition: 0.5s ease color;
+}
+#futbol:hover{
+    color:black;
+}
+#contact{
+    transition: 0.5s ease color;
+}
+#contact:hover{
+    color:black;
+}
+#depo{
+    transition: 0.5s ease color;
+}
+#depo:hover{
+    color:black;
+}
+
+header nav ul{
+    text-decoration: none;
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    top: 35px;
+    left: 500px;
+    background-color:var(--renk-dort);
+}
+
+
+nav ul a:visited{
+
+    color: var(--renk-alti);
+    }
+
+header nav a{
+    text-decoration: none;
+    font-size: x-large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color:var(--renk-dort);
+    
+}
+
+.sosyal-medya{
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    top: 38px;
+    left: 150px;
+    background-color:var(--renk-dort);
+}
+
+.sosyal-medya .bi-instagram{
+    background-color: var(--renk-dort);
+    cursor: pointer;
+    
+}
+.bi-instagram:hover{
+  border: 2px solid black;
+  border-radius: 5px;
+
+}
+.sosyal-medya .bi-twitter-x{
+    background-color: var(--renk-dort);
+    cursor: pointer;
+}
+.bi-twitter-x:hover{
+    border: 2px solid black;
+  border-radius: 5px;
+}
+.sosyal-medya .bi-linkedin{
+    background-color: var(--renk-dort);
+    cursor: pointer;
+}
+.bi-linkedin:hover{
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.search input{
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    width: 140px;
+    height: 25px;
+    top: 35px;
+    left: 1250px;
+    background-color:var(--renk-dort);
+    transition: .5s all;
+   
+}
+
+.search input:hover{
+    width:145px;
+    height: 30px;
+    border: 3px solid black;
+}
+
+.search i{
+    background-color:#c7b198;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60%;
+    position: absolute;
+    top: 32px;
+    left: 1400px;
+    transition: all .5s;
+}
+
+.search i:hover{
+    background-color:var(--renk-yedi);
+}
+
+input{
+    border-radius: 15px;
+    border: 3px solid black;
+    background-color:#f3bc77;
+
+}
+
+#ANASAYFA{
+    padding-top: 100px;
+    padding-left: 0;
+}
+#ANASAYFA::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 140px;
+    width: 100%;
+    height: 5PX;
+    background:black;
+    border-radius: 6px;
+} 
+    
+#ANASAYFA h1{
+        color:var(--renk-dokuz);
+        font-family: "Exo 2", sans-serif;
+        font-weight: 800 ;
+        font-size: xx-large;
+        text-decoration: underline;
+        text-decoration-color: var(--renk-sekiz);
+  }
+
+.FUTBOL{
+    padding-top: 105px;
+    padding-left: 0;
+}
+
+.FUTBOL h1{
+    color:var(--renk-dokuz);
+    font-family: "Exo 2", sans-serif;
+    font-weight: 800 ;
+    font-size: xx-large;
+    text-decoration: underline;
+    text-decoration-color:var(--renk-sekiz);
+}
+
+#signature{
+    background-color: #3e4a61;
+    border:5px solid #393e46 ;
+    display: flex;
+    text-align: center;
+    align-items: end;    
+    padding: 5px;
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    width: 100%;
+    display: inline-block;
+    
+}
+
+#iletişimbaşlik{
+padding-top: 105px;
+padding-left: 0;
+} 
+
+#iletişimbaşlik h1{
+    color:var(--renk-dokuz);
+    font-family: "Exo 2", sans-serif;
+    font-weight: 800 ;
+    font-size: xx-large;
+    text-decoration: underline;
+    text-decoration-color:var(--renk-sekiz);
+}
+
+#mainiletişim{
+    padding-top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mainiletişim::before{
+    content: '';
+    position: absolute;
+    top: 150px;
+    width: 100%;
+    height: 5px;
+    background:black;
+    border-radius: 6px;
+}
+#mainiletişim::after{
+    content: '';
+    position: absolute;
+    top: 770px;
+    width: 100%;
+    height: 5px;
+    background:black;
+    border-radius: 6px;
+}
+
+#iletişim{
+    color: #096c47;
+    font-family:cursive;
+    font-size: large;
+    font-style: italic;
+}
+
+#iletişim2{
+    color:black;
+    font-family: "Oswald", sans-serif;
+    font-size: xx-large;
+    font-style: normal;
+}
+
+label{
+    background-color: var(--renk-onbir);
+    font-family: cursive;
+    font-size: medium;
+    font-weight: 600;
+}
+
+.mesaj{
+    background-color: var(--renk-onbir);
+    flex-direction: column;
+    display: flex;
+    
+    
+    
+}
+
+.contactus{
+    border: 8px solid #295f4e;
+    background-color: var(--renk-onbir);
+    border-radius: 20px;
+    justify-content: space-evenly;
+    align-items:center ;
+}
+
+
+
+.gönder{
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 90px;
+    height: 45px;
+    background-color: var(--renk-sekiz);
+    color: white;
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    cursor: pointer;
+}
+
+.gönder:hover{
+    border: 2px solid red;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: crimson;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.abouttitle{
+    padding-top: 105px;
+    padding-left: 0;
+}
+
+.abouttitle h1{
+    color:var(--renk-dokuz);
+    font-family: "Exo 2", sans-serif;
+    font-weight: 800 ;
+    font-size: xx-large;
+    text-decoration: underline;
+    text-decoration-color:var(--renk-sekiz);
+}
+
+blockquote:before {
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    width: 8px;
+    height: 100%;
+    background:black;
+    border-radius: 6px;
+}
+ blockquote {
+    padding: 20px 50px;
+    margin: 0 0 25px 0;
+    border-left: 0;
+    font-style: italic;
+    color: black;
+    position: relative;
+    z-index: 1;
+}
+
+.aboutdiv p{
+    font-family: "Exo 2", sans-serif;
+    font-weight: 600 ;
+    font-size: large;
+    
+}
+
+span strong{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    font-family: cursive;
+    font-weight: 600 ;
+    font-size: large;
+}
+span #mail{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    font-family: cursive;
+    font-weight: 600 ;
+    font-size: large;
+}
+
+aside::before{
+    content: '';
+    position: absolute;
+    top: 9px;
+    left: -10px;
+    width: 5px;
+    height: 100%;
+    background:#deae4f;
+    border-radius: 6px;
+}
+.poetry{
+    
+    position: absolute;
+    background-color: #c7b198;
+    top: 150px;
+    right: 0;
+}
+
+
+.poetry .şiir p{
+    border: 3px solid #096c47;
+    border-radius: 10px;
+    background-color: #d6b36d;
+    
+}
+
+.kitap{
+    position: absolute;
+    top: 570px;
+    right: 269px;
+
+}
+
+.kitap .öneri p{
+    background-color: #d6b36d;
+    border: 3px solid #096c47;
+}
+
+.film{
+    position: absolute;
+    top: 655px;
+    right: 312px;
+
+}
+
+.film .öneri-film p{
+    background-color: #d6b36d;
+    border: 3px solid #096c47;
+}
+
+.gol{
+    position: absolute;
+    top: 570px;
+    right: 5px;
+
+}
+
+.gol .Goal {
+    background-color: ghostwhite;
+    border: 3px solid #096c47;
+}
+
+.gol .Goal img{
+    width: 220px;
+    height: 200px;
+
+}
+.gol .Goal p{
+    position: absolute;
+    top: 240px;
+    right: 70px;
+
+}
+
+.haber #hbr1{
+    height: 250px;
+    width: 450px;
+    position: absolute;
+    top: 150px;
+    left: 200px;
+}
+
+.haber #hbr1title{
+    position:absolute;
+    top: 400px;
+    left: 200px;
+    cursor: pointer;
+}
+.haber #hbr1title:hover{
+    text-decoration:underline ;
+}
+
+.haber #konu1{
+    position:absolute;
+    top: 430px;
+    left: 200px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+}
+.haber .devam{
+    position: absolute;
+    top: 500px;
+    left: 300px;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    font-style: italic;
+    font-weight: 600;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.haber .devam:hover{
+    background-color: black;
+    color: white;
+}
+
+.haber::after{
+    
+        content: '';
+        position: absolute;
+        top: 545px;
+        width: 50%;
+        height: 2px;
+        background:black;
+        border-radius: 5px;
+    
+}
+
+.haber #hbr2{
+    height: 250px;
+    width: 455px;
+    position: absolute;
+    top: 550px;
+    left: 200px;
+}
+
+.haber #hbr2title{
+    position:absolute;
+    top: 800px;
+    left: 200px;
+    cursor: pointer;
+}
+.haber #hbr2title:hover{
+    text-decoration:underline ;
+}
+
+.haber #konu2{
+    position:absolute;
+    top: 830px;
+    left: 200px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+}
+
+.haber .devam2{
+    position: absolute;
+    top: 920px;
+    left: 300px;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    font-style: italic;
+    font-weight: 600;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.haber .devam2:hover{
+    background-color: black;
+    color: white;
+}
+
+.arkaplan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#ap1{
+   max-width: 100%;
+    height: 1400px;
+    filter: opacity(50%);
+    filter: contrast(50%);
+}
+#ap2{
+    max-width: 100%;
+    height: 1400px;
+    filter: opacity(50%);
+    filter: contrast(50%);
+} 
