@@ -116,12 +116,6 @@ header nav ul{
     background-color:var(--renk-dort);
 }
 
-
-nav ul a:visited{
-
-    color: var(--renk-alti);
-    }
-
 header nav a{
     text-decoration: none;
     font-size: x-large;
@@ -129,6 +123,11 @@ header nav a{
     background-color:var(--renk-dort);
     
 }
+
+nav ul a:visited{
+
+    color: var(--renk-alti);
+    }
 
 .sosyal-medya{
     display: flex;
